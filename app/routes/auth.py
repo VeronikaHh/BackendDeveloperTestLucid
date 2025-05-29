@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from app.dependencies import get_auth_service
 from app.schemas.user import CreateLoginUserSchema
-from app.services.auth_service import AuthService
+from app.services.auth import AuthService
 
 router = APIRouter()
 

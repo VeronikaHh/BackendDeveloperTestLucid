@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from app.dependencies import get_post_service
 from app.utils.auth import get_current_user
-from app.services.post_service import PostService
+from app.services.post import PostService
 from app.models.user import User
 from app.schemas.post import GetPostSchema, CreatePostSchema
 
